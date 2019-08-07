@@ -82,3 +82,11 @@ a .link-white{
 		top: -60px
 	}
 }
+
+.border-bottom-stylish-dark{
+	border-bottom: 1px solid #3e4551;
+}
+
+.no-border-top{
+	border-bottom-width: 0px;
+}
