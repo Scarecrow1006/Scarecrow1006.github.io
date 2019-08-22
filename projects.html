@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/f02363a03e.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Parth Kalgaonkar</title>
+</head>
+<body class="bg-dark white-text">
+	<!-- Navbar -->
+	<nav class="navbar navbar-dark bg-dark navbar-expand-md justify-content-end">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAlt" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarAlt">
+			<ul class="navbar-nav nav-justified">
+				<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>	
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Main container -->
+	<div class="container my-1">
+		<div class="row">
+			<div class="col-12 col-lg-4 justify-content-center p-0" id="first-project">
+				<div class="card elegant-color project m-1">
+					<img src="images/ccsds_proj.jpg" class="card-img-top project-cover">
+					<h4 class="card-header">
+						Implementation of CCSDS hyperspectral image compression algorithm on FPGA
+					</h4>
+					<div class="card-body">
+						A sample adaptive linear compression algorithm was implemented using FPGA using a zynq-7000 SoC. Algorithm designed by Consusltative commitee for space data sciences. Completely pipelined datapath was developed for 3U nanosatellite with power and time optimisation.
+					</div>
+					<div class="card-footer text-center text-muted">Click for more info</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-4 justify-content-center p-0">
+				<div class="card elegant-color project m-1">
+					<img src="images/p10_proj.png" class="card-img-top project-cover">
+					<h4 class="card-header">
+						User Space Library for LED P10 panels
+					</h4>
+					<div class="card-body">
+						Raspberry Pi was used to create a User-Space Library for cheap LED panels. FreeType was used for text rendering. Supports creation of large displays by assembling long daisy chains of individual panels. Existing SPI hardware on Raspberry Pi was used to implement HUB-12 protocol used by the panels.
+					</div>
+					<div class="card-footer text-center">
+						<a href="https://github.com/parthkalgaonkar/ledproj/blob/master/README.md" target="_blank">See more <i class="fab fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-4 justify-content-center p-0">
+				<div class="card elegant-color project m-1">
+					<img src="images/flow_proj.jpg" class="card-img-top project-cover">
+					<h4 class="card-header">
+						Calibration of Ultrasound based flow meter DAU.
+					</h4>
+					<div class="card-body">
+						Ultrasonic Flow Meter was developed by <a href="https://www.efftronics.com/smart-water" target="_blank">Efftronics Systems</a> for Urban Municipal corporation to monitor for leaks in the water grid. DAUs to be connected via GSM into and IoT framework. Undertook Calibration of Sensor modules to meet specific requirements. Work involved debugging existing embedded firmware.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+	<script src="./scripts/scripts.js"></script>
+</body>
+</html>
