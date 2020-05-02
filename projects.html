@@ -24,48 +24,138 @@
 	</nav>
 	
 	<!-- Main container -->
-	<div class="container my-1">
-		<div class="row">
-			<div class="col-12 col-lg-4 justify-content-center p-0" id="first-project">
-				<div class="card elegant-color project m-1">
-					<img src="images/ccsds_proj.jpg" class="card-img-top project-cover">
-					<h4 class="card-header">
-						Implementation of CCSDS hyperspectral image compression algorithm on FPGA
-					</h4>
-					<div class="card-body">
-						A sample adaptive linear compression algorithm was implemented using FPGA using a zynq-7000 SoC. Algorithm designed by Consusltative commitee for space data sciences. Completely pipelined datapath was developed for 3U nanosatellite with power and time optimisation.
-					</div>
-					<div class="card-footer text-center text-muted">Click for more info</div>
-				</div>
+	<div class="container elegant-color my-1">
+		<div class="row p-5">
+			<div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center align-items-center order-lg-2">
+				<img class="img-fluid rounded-circle project-cover" src="./images/ccsds_proj.png" alt="ccsds image">
 			</div>
-
-			<div class="col-12 col-lg-4 justify-content-center p-0">
-				<div class="card elegant-color project m-1">
-					<img src="images/p10_proj.png" class="card-img-top project-cover">
-					<h4 class="card-header">
-						User Space Library for LED P10 panels
-					</h4>
-					<div class="card-body">
-						Raspberry Pi was used to create a User-Space Library for cheap LED panels. FreeType was used for text rendering. Supports creation of large displays by assembling long daisy chains of individual panels. Existing SPI hardware on Raspberry Pi was used to implement HUB-12 protocol used by the panels.
-					</div>
-					<div class="card-footer text-center">
-						<a href="https://github.com/parthkalgaonkar/ledproj/blob/master/README.md" target="_blank">See more <i class="fab fa-github"></i></a>
-					</div>
+			<div class="col-lg-9 order-lg-1 my-auto">
+				<h3 class="row">
+					CCSDS hyperspectral image compression on FPGA
+				</h3>
+				<div class="row small mb-3">
+					Team Anant, BITS Pilani, Dec 2017 - Apr 2020
 				</div>
-			</div>
-
-			<div class="col-12 col-lg-4 justify-content-center p-0">
-				<div class="card elegant-color project m-1">
-					<img src="images/flow_proj.jpg" class="card-img-top project-cover">
-					<h4 class="card-header">
-						Calibration of Ultrasound based flow meter DAU.
-					</h4>
-					<div class="card-body">
-						Ultrasonic Flow Meter was developed by <a href="https://www.efftronics.com/smart-water" target="_blank">Efftronics Systems</a> for Urban Municipal corporation to monitor for leaks in the water grid. DAUs to be connected via GSM into and IoT framework. Undertook Calibration of Sensor modules to meet specific requirements. Work involved debugging existing embedded firmware.
-					</div>
+				<ul class="d-block row">
+					<li>A sample adaptive linear compression algorithm was implemented using FPGA using a zynq-7000 SoC.</li>
+					<li>Algorithm designed by Consusltative commitee for space data sciences.</li>
+					<li>Completely pipelined datapath was developed for 3U nanosatellite with power and time optimisation.</li>
+					<li>Involved design and simulation of complete datapath in Verilog RTL.</li>
+				</ul>
+				<div class="row ">
+					<a href="http://www.team-anant.org/" class="mx-auto">Team Website <i class="fas fa-external-link-alt"></i></a>
 				</div>
 			</div>
 		</div>
+
+		<div class="row p-5">
+			<div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center align-items-center order-lg-2">
+				<img class="img-fluid rounded-circle project-cover bg-white" src="./images/neural_net.svg" alt="ccsds image">
+			</div>
+			<div class="col-lg-9 order-lg-1 my-auto">
+				<h3 class="row">
+					Implementation of Artificial Neural network on a Zynq-7000 SoC
+				</h3>
+				<div class="row small mb-3">
+					Laboratory Project, BITS Pilani, Aug - Dec 2019
+				</div>
+				<ul class="d-block row">
+					<li>2-layer fully connected neural network implemented for non line-of-sight localisation in indoor enviroments.</li>
+					<li>Complete implementation and training using Levenberg-Merquadt training algorithm done on chip.</li>
+					<li>Non linear tansigmoid activation function of neurons was implemented using BRAM resources as LUTs.</li>
+					<li>Computational latency for positions achieved to under 1.5ms.</li>
+					<li>Total power consumed by neural network Programmable logic under 100mW(expected).</li>
+					<li>Total training time of network to new set of parameters under 2s</li>
+				</ul>
+				<div class="row ">
+					<a href="./report_nn.pdf" class="mx-auto">Final Report <i class="far fa-file-alt"></i></a>
+					<a href="https://www.bits-pilani.ac.in/pilani/meethashenoy/profile" class="mx-auto">Faculty Page <i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row p-5">
+			<div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center align-items-center order-lg-2">
+				<img class="img-fluid rounded-circle project-cover bg-white" src="./images/p10_proj.svg" alt="ccsds image">
+			</div>
+			<div class="col-lg-9 order-lg-1 my-auto">
+				<h3 class="row">
+					Development of User-Space library for LED P10 panels
+				</h3>
+				<div class="row small mb-3">
+					BITS Pilani, Jan-May 2019
+				</div>
+				<ul class="d-block row">
+					<li>Raspberry Pi was used to create User-Space Library for cheap LED panels.</li>
+					<li>Freetype was used to render text usign system OpenType or TrueType fonts</li>
+					<li>Supports creation of long daisy chains of individual panels for larger displays</li>
+					<li>Existing SPI hardware on Raspberry Pi was used to implement HUB-12 protocol used by panels</li>
+				</ul>
+				<div class="row ">
+					<a href="https://github.com/parthkalgaonkar/ledproj" target="_blank" class="mx-auto">Project Repo <i class="fab fa-github"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row p-5">
+			<div class="col-lg-6 pb-5 pb-lg-0">
+				<h3 class="row">
+					Design of TG based 3-input XOR gate
+				</h3>
+				<div class="row small mb-3">
+					Analog and Digital VLSI design, BITS Pilani, Nov 2018
+				</div>
+				<ul class="d-block row">
+					<li>Designed 3-input XOR gates using Transmision gate logic.</li>
+					<li>Full custom layout using Cadence Virtuoso that passed DRC, LVS and PEX tests.</li>
+					<li>Design was made usign 180nm technology and was tested for functioning at 1GHz</li>
+				</ul>
+				<div class="row">
+					<a href="./report_3xor.pdf" target="_blank" class="mx-auto">Final report <i class="far fa-file-alt"></i></a>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 pt-5 pt-lg-0">
+				<h3 class="row">
+					Implementing a Radix-4 booth multiplier
+				</h3>
+				<div class="row small mb-3">
+					Analog and Digital VLSI design, BITS Pilani, Nov 2018
+				</div>
+				<ul class="d-block row">
+					<li>8-Bit raddix-4 booth multiplier implemented using behavioural description in Verilog RTL.</li>
+					<li>Circuit was synthesised using <code class="text-white">fsd0k_a_generec_core_1d0vtc</code> technology library.</li>
+					<li>Total power consumption less than 22&mu;W expected from synthesis.</li>
+				</ul>
+				<div class="row">
+					<a href="#" target="_blank" class="mx-auto">Project Repo <i class="fab fa-github"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row p-5">
+			<div class="col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center align-items-center order-lg-2">
+				<img class="img-fluid rounded-circle project-cover bg-white" src="./images/flow_proj.svg" alt="ccsds image">
+			</div>
+			<div class="col-lg-9 order-lg-1 my-auto">
+				<h3 class="row">
+					Calibration of Ultrasound based flow meter data acquisition unit
+				</h3>
+				<div class="row small mb-3">
+					Efftronics Systems Private Limited, May-Jul 2018
+				</div>
+				<ul class="d-block row">
+					<li>Ultrasonic flow meter developed by Efftronics for Urban Municipal Corporation to monitor for leaks in the water grid.</li>
+					<li>DAUs to be connected via GSM into IoT framework.</li>
+					<li>Undertook calibration of sensor modules to meet error margin requirements.</li>
+					<li>Work involved debugging and developing firmware for Custom board developed by company.</li>
+				</ul>
+				<div class="row ">
+					<a href="https://www.efftronics.com/smart-water" target="_blank" class="mx-auto">Product Website <i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<!-- Bootstrap scripts -->
